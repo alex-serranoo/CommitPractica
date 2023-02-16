@@ -37,16 +37,6 @@
             <artifactId>tobby-transactional-outbox</artifactId>
             <version>1.5.1</version>
         </dependency>
-		<dependency>
-			<groupId>com.github.jonasrutishauser</groupId>
-			<artifactId>transactional-event</artifactId>
-			<version>1.4.2</version>
-		</dependency>
-        <dependency>
-            <groupId>com.github.jonasrutishauser</groupId>
-            <artifactId>transactional-event-liberty-it</artifactId>
-            <version>1.4.2</version>
-        </dependency>
         <dependency>
             <groupId>jakarta.transaction</groupId>
             <artifactId>jakarta.transaction-api</artifactId>
@@ -66,10 +56,6 @@
 			<groupId>org.microjpa</groupId>
 			<artifactId>microjpa</artifactId>
 			<version>1.2.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
