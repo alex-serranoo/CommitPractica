@@ -30,7 +30,8 @@ public class UsuarioController {
         return usuarioDao.getUsuarios();
     }
     @RequestMapping(value="api/usuarios", method= RequestMethod.POST)
-    public void registrarUsuario(@RequestBody Usuario usuario){    Argon2 argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
+    public void registrarUsuario(@RequestBody Usuario usuario){
+        Argon2 argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
         // La versión en la que se pasa el password como string está depreciada
         String hash = argon2.hash(1,1024,1, usuario.getPassword().getBytes());
         usuario.setPassword(hash);
